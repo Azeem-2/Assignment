@@ -1,35 +1,6 @@
-// Task 21: creating object
-interface Mountain {
-    name : string
-    height : number
-    location:string
-}
-const everest:Mountain = {
-    name : "Everest",
-    height : 8848,
-    location : "Nepal/China"
-}
-const k2:Mountain = {
-    name:"K2",
-    height:8611,
-    location:"Pakistan/China"
+// Task 21:Intentional Error
+const mountains = ["Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"];
 
-}
-const NangaParbat:Mountain = {
-    name:"Nanga Parbat",
-    height:8126,
-    location:"Pakistan"
-}
-const TirichMir:Mountain = {
-    name:"Tirich Mir",
-    height:7708,
-    location:"Pakistan"
-}
-const makalu: Mountain = {
-  name: "Makalu",
-  height: 8463,
-  location: "Nepal/China"
-}
-const mountains: Mountain[] = [everest, k2, NangaParbat, TirichMir, makalu]
-console.log("The list of mountains:");
-console.log(mountains);
+console.log("The list of mountains:")
+console.log(mountains[5]) // This will cause an index error because the array only has 5 elements.
+console.log(mountains[4]) //correct codes

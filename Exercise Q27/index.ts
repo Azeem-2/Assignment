@@ -1,33 +1,17 @@
-// Question 27:Alien Color # 3~
-// Version that runs the first if block
-let alien_color = 'green';
+// Question 28:Stages of Life
 
-if (alien_color === 'green') {
-  console.log('You just earned 5 points!');
-} else if (alien_color === 'yellow') {
-  console.log('You just earned 10 points!');
-} else if (alien_color === 'red') {
-  console.log('You just earned 15 points!');
-}
+const age = 20;
 
-// Version that runs the first else-if block
-alien_color = 'yellow';
-
-if (alien_color === 'green') {
-  console.log('You just earned 5 points!');
-} else if (alien_color === 'yellow') {
-  console.log('You just earned 10 points!');
-} else if (alien_color === 'red') {
-  console.log('You just earned 15 points!');
-}
-
-// Version that runs the second else-if block
-alien_color = 'red';
-
-if (alien_color === 'green') {
-  console.log('You just earned 5 points!');
-} else if (alien_color === 'yellow') {
-  console.log('You just earned 10 points!');
-} else if (alien_color === 'red') {
-  console.log('You just earned 15 points!');
+if (age < 2) {
+  console.log("The person is a baby.");
+} else if (age >= 2 && age < 4) {
+  console.log("The person is a toddler.");
+} else if (age >= 4 && age < 13) {
+  console.log("The person is a kid.");
+} else if (age >= 13 && age < 20) {
+  console.log("The person is a teenager.");
+} else if (age >= 20 && age < 65) {
+  console.log("The person is an adult.");
+} else {
+  console.log("The person is an elder.");
 }

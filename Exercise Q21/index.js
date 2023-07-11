@@ -1,28 +1,5 @@
-var everest = {
-    name: "Everest",
-    height: 8848,
-    location: "Nepal/China"
-};
-var k2 = {
-    name: "K2",
-    height: 8611,
-    location: "Pakistan/China"
-};
-var NangaParbat = {
-    name: "Nanga Parbat",
-    height: 8126,
-    location: "Pakistan"
-};
-var TirichMir = {
-    name: "Tirich Mir",
-    height: 7708,
-    location: "Pakistan"
-};
-var makalu = {
-    name: "Makalu",
-    height: 8463,
-    location: "Nepal/China"
-};
-var mountains = [everest, k2, NangaParbat, TirichMir, makalu];
+// Task 21:Intentional Error
+var mountains = ["Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu"];
 console.log("The list of mountains:");
-console.log(mountains);
+console.log(mountains[5]); // This will cause an index error because the array only has 5 elements.
+console.log(mountains[4]); //correct codes

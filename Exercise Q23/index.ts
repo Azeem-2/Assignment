@@ -1,32 +1,46 @@
-// Question 23:Conditional Tests
-let car = 'subaru';
+// Question 23:More Conditional Tests
+// Tests for equality and inequality with strings
+console.log('apple' === 'apple'); // true
+console.log('apple' !== 'orange'); // true
+console.log('apple' === 'orange'); // false
+console.log('apple' !== 'apple'); // false
 
-console.log("Is car == 'subaru'? I predict True.");
-console.log(car == 'subaru'); // True
+// Tests using the lower case function
+console.log('APPLE'.toLowerCase() === 'apple'); // true
+console.log('APPLE'.toLowerCase() !== 'orange'); // true
+console.log('APPLE'.toLowerCase() === 'orange'); // false
+console.log('APPLE'.toLowerCase() !== 'apple'); // false
 
-console.log("Is car == 'honda'? I predict False.");
-console.log(car == 'honda'); // False
+// Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+console.log(5 === 5); // true
+console.log(5 !== 4); // true
+console.log(5 > 4); // true
+console.log(5 < 6); // true
+console.log(5 >= 5); // true
+console.log(5 <= 6); // true
+console.log(5 === 4); // false
+console.log(5 !== 5); // false
+console.log(5 > 6); // false
+console.log(5 < 4); // false
+console.log(5 >= 6); // false
+console.log(5 <= 4); // false
 
-console.log("Is car.length == 7? I predict True.");
-console.log(car.length == 7); // True
+// Tests using "and" and "or" operators
+console.log(5 > 4 && 6 > 5); // true
+console.log(5 > 4 || 6 < 5); // true
+console.log(5 > 6 && 6 > 5); // false
+console.log(5 > 6 || 6 < 5); // false
 
-console.log("Is car.length == 6? I predict False.");
-console.log(car.length == 6); // False
+// Test whether an item is in a array
+const fruits = ['apple', 'orange', 'banana'];
+console.log(fruits.includes('apple')); // true
 
-console.log("Is car.toUpperCase() == 'SUBARU'? I predict True.");
-console.log(car.toUpperCase() == 'SUBARU'); // True
+// Test whether an item is not in a array
+console.log(!fruits.includes('pear')); // true
 
-console.log("Is car.toUpperCase() == 'HONDA'? I predict False.");
-console.log(car.toUpperCase() == 'HONDA'); // False
+// Test whether an item is in a array
+const fruits1 = ['apple', 'orange', 'banana'];
+console.log(fruits.includes('pear')); // false
 
-console.log("Is car.indexOf('a') > -1? I predict True.");
-console.log(car.indexOf('a') > -1); // True
-
-console.log("Is car.indexOf('b') > -1? I predict False.");
-console.log(car.indexOf('b') > -1); // False
-
-console.log("Is car.includes('sub')? I predict True.");
-console.log(car.includes('sub')); // True
-
-console.log("Is car.includes('hon')? I predict False.");
-console.log(car.includes('hon')); // False
+// Test whether an item is not in a array
+console.log(!fruits1.includes('apple')); // false

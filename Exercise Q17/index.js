@@ -1,11 +1,24 @@
-// task 17:Shrinking Guest List 
-var guests2 = ['danial', 'sahil', 'Ahmed', 'Mahad', 'Hassan', 'dawood'];
-console.log("I can only invite two people for dinner.");
-while (guests2.length > 2) {
-    var guest = guests2.pop();
-    console.log("Sorry, ".concat(guest, ", I can't invite you to dinner."));
-}
-console.log("I'm still inviting ".concat(guests2[0], " and ").concat(guests2[1], " to dinner."));
-guests2.pop();
-guests2.pop();
-console.log("My guest list is now empty.");
+// Question 17:Seeing the world
+var places = ["Tokyo", "Paris", "London", "Rome", "New York"];
+console.log("The original order of the array:");
+console.log(places);
+console.log("\nPrinting the array in alphabetical order without modifying the actual list:");
+console.log(places.sort());
+console.log("\nShowing that the array is still in its original order:");
+console.log(places);
+console.log("\nPrinting the array in reverse alphabetical order without changing the order of the original list:");
+console.log(places.sort(function (a, b) { return b.localeCompare(a); }));
+console.log("\nShowing that the array is still in its original order:");
+console.log(places);
+console.log("\nReversing the order of the list:");
+places.reverse();
+console.log(places);
+console.log("\nReversing the order of the list again:");
+places.reverse();
+console.log(places);
+console.log("\nSorting the array so it’s stored in alphabetical order:");
+places.sort();
+console.log(places);
+console.log("\nSorting to change your array so it’s stored in reverse alphabetical order:");
+places.sort(function (a, b) { return b.localeCompare(a); });
+console.log(places);
