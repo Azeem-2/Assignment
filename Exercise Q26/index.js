@@ -1,4 +1,4 @@
-// Question 26:Alien Color # 3
+s// Question 26:Alien Color # 3
 // Version that runs the first if block
 var alien_color = 'green';
 if (alien_color === 'green') {
