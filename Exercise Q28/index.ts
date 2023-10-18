@@ -1,22 +1,17 @@
-// Task 29:Favourite Fruit
-const favorite_fruits = ['banana', 'apple', 'mango'];
+// Question 28:Stages of Life
 
-if (favorite_fruits.includes('banana')) {
-  console.log('You really like bananas!');
-}
+const age = 20;
 
-if (favorite_fruits.includes('apple')) {
-  console.log('You really like apples!');
-}
-
-if (favorite_fruits.includes('mango')) {
-  console.log('You really like mangoes!');
-}
-
-if (favorite_fruits.includes('orange')) {
-  console.log('You really like oranges!');
-}
-
-if (favorite_fruits.includes('kiwi')) {
-  console.log('You really like kiwis!');
+if (age < 2) {
+  console.log("The person is a baby.");
+} else if (age >= 2 && age < 4) {
+  console.log("The person is a toddler.");
+} else if (age >= 4 && age < 13) {
+  console.log("The person is a kid.");
+} else if (age >= 13 && age < 20) {
+  console.log("The person is a teenager.");
+} else if (age >= 20 && age < 65) {
+  console.log("The person is an adult.");
+} else {
+  console.log("The person is an elder.");
 }
